@@ -18,13 +18,13 @@ else
         case "$REPLY" in
 
         1 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://github.com/DanielWTE/easy-storage-gaming/blob/main/client.config; exit;;
+            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/main/client/client.config; exit;;
         2 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://github.com/DanielWTE/easy-storage-gaming/blob/pre-release/client.config; exit;;
+            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/pre-release/client/client.config; exit;;
         3 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://github.com/DanielWTE/easy-storage-gaming/blob/beta/client.config; exit;;
+            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/beta/client/client.config; exit;;
         4 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://github.com/DanielWTE/easy-storage-gaming/blob/alpha/client.config; exit;;
+            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/alpha/client/client.config; exit;;
         $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
         *) echo "Invalid option. Try another one.";continue;;
 
