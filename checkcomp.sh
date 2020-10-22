@@ -1,6 +1,6 @@
 #! /bin/bash
 
-    if [ -e /easy-storage-gaming/client/client.config ]
+if [ -e /easy-storage-gaming/client/client.config ]
 then
     echo -e '\e[32m' "Config Checked!"
 else
@@ -18,14 +18,22 @@ else
         case "$REPLY" in
 
         1 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/main/client/client.config; exit;;
+            echo -e '\e[32m' "Downloading..."
+            wget --directory-prefix=/easy-storage-gaming/client https://www.tyioline.net/download/main/client/client.config; exit;;
+
         2 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/pre-release/client/client.config; exit;;
+            echo -e '\e[32m' "Downloading..."
+            wget --directory-prefix=/easy-storage-gaming/client https://www.tyioline.net/download/pre-release/client/client.config; exit;;
+
         3 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/beta/client/client.config; exit;;
+            echo -e '\e[32m' "Downloading..."
+            wget --directory-prefix=/easy-storage-gaming/client https://www.tyioline.net/download/beta/client/client.config; exit;;
+
         4 ) echo "You picked $opt which is version $REPLY"
-            wget --directory-prefix=/easy-storage-gaming/client https://blacklistpack.com/downloads/alpha/client/client.config; exit;;
-        $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
+            echo -e '\e[32m' "Downloading..."
+            wget --directory-prefix=/easy-storage-gaming/client https://www.tyioline.net/download/alpha/client/client.config; exit;;
+
+        $(( ${#options[@]}+1 )) ) echo "Check Ended!"; break;;
         *) echo "Invalid option. Try another one.";continue;;
 
         esac
